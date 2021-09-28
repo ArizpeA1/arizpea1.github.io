@@ -1,7 +1,6 @@
 # CAS page of Iván Arizpe Dueñas
 
 
-
 ## About me
 
 
