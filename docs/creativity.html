@@ -31,9 +31,23 @@ El proyecto empieza intentando modificar la imagen de un Live boot de Linux mint
         <dt>Dwm rice, dotfiles, emacs, vim y otras configuraciones - 10 hrs</dt><dd>A lo largo de mis 2 años usando linux llevo aproximadamente uno y medio usando Tiling window managers, estos entornos de escritorio no solo se ven mucho más bonitos y limpios, si no que aceleran mucho el ritmo de trabajo del quien los ocupe. Esto se logra no solamente por la estética sino por la manera por la que interactúas con la computadora, cambiando de un estilo de trabajo que necesita mucha interacción con el mouse para trabajar a uno en el que toda la interacción es con el teclado a través de shortcuts y diferentes mecánicas para moverse a través de los espacios de trabajo proporcionados y de organizarlos sin nunca tener que tocar el mouse (Para mas información de esto, investigue sobre DWM y los tiling window managers) así acelerando en gran medida el ritmo de trabajo y la productividad. Y todo esto es complementado por programas como emacs y vim (cuando están bien configurados) y otras utilidades que automatizan muchos procesos que de otra manera serían hechos a mano.<br>
 Por esto fué una parte crucial del proyecto implementar todo esto en StitchesOS, pues esto es lo que lo distingue de otros proyectos más grandes. (además de que la mayoría de estos proyectos están basados en ubuntu o arch, aunque ocupen programas similares). En este programa están implementados todos los archivos de configuración que pudieran parecer importantes así como muchas utilidades que acelerarán muchos procesos o al menos los harán más fáciles.<br>
 </dd>
-        <dt></dt><dd></dd>
-        <dt></dt><dd></dd>
-        <dt></dt><dd></dd>
+        <dt>Bootloader and calamares configuration - 10 hrs</dt><dd>El bootloader fué la tercera etapa del proyecto, ya una vez configurado todo el aspecto visual, funcional, e interno del sistema. Lo único que me faltaba era poner mas opciones en el bootloader como sería reparación del sistema, chequeo o el proceso de booting y poner el instalador. <br>
+El instalador fué la parte del proyecto que fue más tediosa y lenta. Utilicé el instalador Calamares con una configuración personalizada que se adaptara al sistema, y en esta parte es donde también tuve que diseñar los logos y diferentes aspectos de la presentación inicial del sistema, luego de esto tuve que hacer muchas pruebas y por lo tanto muchas compilaciones con nuevas versiones de calamares para comprobar su funcionamiento adecuado y que se respetara todo lo que quería que se lograra con el instalador.<br>
+Por otro lado, el bootloader, es decir el programa que carga el sistema operativo a la memoria para que puedas prender tu computadora y entrar a un sistema operativo. En el bootloader tuve que regresar a investigar como funciona en el sistema de live-boot para poder modificar el bootloader y que fuera más intuitivo y llamativo para el nuevo usuario.<br>
+Otra parte de esta etapa fué el archivo de ayuda, pues para que el usuario supiera cómo usar el sistema también necesitaba ayuda debido a que los comandos y keybindings de el tiling window manager los había configurado yo. Como respuesta a este problema hice un botón de ayuda, para esto puse un parche que permitiera esta operación, y ya esto hecho tuve que pasar toda la configuración a un archivo de texto para que el usuario pudiera saber como se usa el sistema. De la misma forma, en este archivo puse instrucciones para el instalador y para diversas cosas como conectarse a la red o actualizar los repositorios.<br>
+</dd>
+        <dt>Redacción de la guía de replicación - 5 hrs</dt><dd>La guía fué un aspecto muy importante de este trabajo, pues sirve a la necesidad de documentación de como hacer proyectos de este tipo. Esta guía que menciono está hecha para principiantes que no tienen idea de que tienen que hacer y es una breve explicación del método con el que armo el sistema y cómo funcionan los scripts que proporciono para que así cualquiera pueda modificarlos para que sirvan a sus necesidades.<br>
+La guía se encuentra empaquetada en el siguiente link: <a href="https://sourceforge.net/projects/stitchesos/files/tar-file/Stitches-1.2.tar/download">Stitches-1.2.tar</a> 
+</dd>
+        <dt>Mantenimiento - 25 hrs</dt><dd>El mantenimiento es la parte más importante de cualquier proyecto de sistemas, sobre todo en sistemas operativos, pues cualquier error puede volver al sistema completamente obsoleto o hasta peligroso para la seguridad del usuario. Por esto mismo he dedicado varias horas a el mantenimiento del sistema en aspectos como los siguientes<br>
+•  Infiernos de dependencias<br>
+•  Bugs en el bootloader<br>
+•  Mantenimiento de scripts<br>
+•  Testing<br>
+•  Publicaciones en sourceforge y github<br>
+•  Mantenimiento de la guía<br>
+
+</dd>
         </dl>
 
 
