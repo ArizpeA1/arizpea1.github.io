@@ -227,6 +227,32 @@ dt { font-weight: bold ; color: lightgray ; }
 	}
 
 }
+@media (min-width: 55em) {
+
+	.rescenter, .disappear {
+		display: block ;
+		float: center;
+		padding: 20px ;
+		clear: both ;
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	.resmid {
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	main {
+		max-width: var(--genwidth) ;
+	}
+
+	.column {
+		float: left;
+		width: 70% ;
+	}
+
+}
 
 .entry p, .entry li { margin-left: 2em ; }
 
