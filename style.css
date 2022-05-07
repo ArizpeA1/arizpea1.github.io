@@ -229,9 +229,9 @@ dt { font-weight: bold ; color: lightgray ; }
 }
 @media (min-width: 55em) {
 
-	.rescenter, .disappear {
+	.resleft, .disappear {
 		display: block ;
-		float: center;
+		float: left;
 		padding: 20px ;
 		clear: both ;
 		max-height: 300px ;
