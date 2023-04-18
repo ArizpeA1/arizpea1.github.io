@@ -1,4 +1,4 @@
 # CAS page of Iván Arizpe Dueñas
 
-[BLOG](/docs/blog.md)
+[BLOG](https://arizpea1.github.io/index.html)
 
