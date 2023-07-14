@@ -10,22 +10,22 @@
 
 <body>
     <header>
-        <h1>Creatividad</h1>
+        <h1><a href="https://sourceforge.net/projects/stitchesos/">StitchesOS</a></h1>
     </header>
 
     <nav><ul><a href="/index.html"><li>🏡 Home</li></a><a href="/docs/creativity.html"><li>🖌️ Creatividad</li></a><a href="/docs/action.html"><li>🔨 Acción</li></a><a href="/docs/service.html"><li>🌲 Servicio</li></a><a href="/articles/proyects.html"><li>💼 Proyecto CAS</li></a><a href="/articles/contact.html"><li>📧 About myself and the IB profile</li></a></ul></nav>
 
         <main>
-        <h2><a href="https://sourceforge.net/projects/stitchesos/">StitchesOS</a></h2>
+       
         <dl style=font-size:large>
-        <dd><img class=resright src="/pix/StitchesOS-evidencia.jpeg" alt="Luke" title="stitches"><a href="https://sourceforge.net/projects/stitchesos/">StitchesOS</a> es un sistema operativo creado por mi tomando la base de Debian y recopilando la base con muchos addons y scripts que hacen usar el sistema mucho más placentero, rápido y sencillo (después de la curva de aprendizaje).<br>
+        <dd><img class=resright src="/pix/StitchesOS-evidencia.jpeg" alt="Luke" title="stitches"><a href="https://sourceforge.net/projects/stitchesos/">StitchesOS</a> es un proyecto personal de un sistema operativo creado como un "Re-spin" de Debian y recopilando la base con muchos "add-ons" y scripts que hacen usar el sistema mucho más placentero, rápido y sencillo (después de la curva de aprendizaje).<br>
 Este proyecto surge a partir de mi necesidad de crear un sistema a mi gusto, que pueda llevar a donde sea y sea exactamente como yo lo imagino. Pero sin entrar a territorios de gentoo, pues ese ya es un tema mucho más complicado, que aunque no tengo problema, no es práctico, ni portable. Pero exactamente por esto elegí Debian como la base, pues con esta base, tengo acceso a muchos paquetes y documentación sin tener que mantener absolutamente todo desde cero.<br>
 Todo el proyecto es un gran reto, desde la falta de información y documentación en el tema hasta que los scripts que se pueden encontrar que ayudan a hacer el proceso más fácil son muy cerrados y difíciles de usar, o están desactualizados. <br>
 El proyecto empieza intentando modificar la imagen de un Live boot de Linux mint, lo que termina dejando esa instalación completamente destruida e inservible. La segunda prueba fué con una herramienta que toma toda la imagen del sistema operativo instalado y la comprime, esta opción aunque era buena tenía dos grandes problemas: el primero es que tomaba todos los archivos y absolutamente toda la información del sistema y la empaquetaba, dado que la computadora tenía todas las otras pruebas y paquetes de prueba y muchas otras cosas la imagen quedó enorme. Y el segundo problema fué que la imagen aunque se creará en una máquina virtual y no tomará más que lo necesario seguía quedando grande y el tiempo de empaquetación era de aproximadamente siete horas. La tercer prueba es intentando hacer una imagen con la base de Void Linux, esta versión funcionó pero era poco configurable. Y por último llegamos a el método actual, que ocupa scripts de las herramientas de live-boot y a través de scripts de automatización propios y mucha configuración con live-boot logré la primer imagen funcional, y con este método fuí modificando nada más la configuración del sistema empaquetado para adaptarlo a mis necesidades y gustos.<br>
         </dd>
         </dl>
          <dl style=font-size:large>
-            <dt>Scripts para compilar y armar el sistema - 30hrs</dt><dd>Ya una vez que supe con que programa iba a hacer el sistema empecé a juguetear con la configuración de live-boot para así aprender cómo funcionaba, y así en un aproximado de 10 horas logré comprender cómo funcionaban varios aspectos de los scripts de compilación. A partir de este conocimiento empecé a modificarlos y hacer un script de automatización para así no tener que hacer todo manualmente cada vez que lo quisiera hacer y así ahorrar aproximadamente una hora cada vez que lo fuera a rearmar con nuevas mejoras o características.<br>
+            <dt>Scripts para compilar y armar el sistema</dt><dd>Ya una vez que supe con que programa iba a hacer el sistema empecé a juguetear con la configuración de live-boot para así aprender cómo funcionaba, y así en un aproximado de 10 horas logré comprender cómo funcionaban varios aspectos de los scripts de compilación. A partir de este conocimiento empecé a modificarlos y hacer un script de automatización para así no tener que hacer todo manualmente cada vez que lo quisiera hacer y así ahorrar aproximadamente una hora cada vez que lo fuera a rearmar con nuevas mejoras o características.<br>
 </dd>
         <dt>Dwm rice, dotfiles, emacs, vim y otras configuraciones - 10 hrs</dt><dd><img class=resleft src="/pix/StitchesOS-evidencia2.webp" alt="Luke" title="stitches">A lo largo de mis 2 años usando linux llevo aproximadamente uno y medio usando Tiling window managers, estos entornos de escritorio no solo se ven mucho más bonitos y limpios, si no que aceleran mucho el ritmo de trabajo del quien los ocupe. Esto se logra no solamente por la estética sino por la manera por la que interactúas con la computadora, cambiando de un estilo de trabajo que necesita mucha interacción con el mouse para trabajar a uno en el que toda la interacción es con el teclado a través de shortcuts y diferentes mecánicas para moverse a través de los espacios de trabajo proporcionados y de organizarlos sin nunca tener que tocar el mouse (Para mas información de esto, investigue sobre DWM y los tiling window managers) así acelerando en gran medida el ritmo de trabajo y la productividad. Y todo esto es complementado por programas como emacs y vim (cuando están bien configurados) y otras utilidades que automatizan muchos procesos que de otra manera serían hechos a mano.<br>
 Por esto fué una parte crucial del proyecto implementar todo esto en StitchesOS, pues esto es lo que lo distingue de otros proyectos más grandes. (además de que la mayoría de estos proyectos están basados en ubuntu o arch, aunque ocupen programas similares). En este programa están implementados todos los archivos de configuración que pudieran parecer importantes así como muchas utilidades que acelerarán muchos procesos o al menos los harán más fáciles.<br>
@@ -36,44 +36,6 @@ Por otro lado, el bootloader, es decir el programa que carga el sistema operativ
 Otra parte de esta etapa fué el archivo de ayuda, pues para que el usuario supiera cómo usar el sistema también necesitaba ayuda debido a que los comandos y keybindings de el tiling window manager los había configurado yo. Como respuesta a este problema hice un botón de ayuda, para esto puse un parche que permitiera esta operación, y ya esto hecho tuve que pasar toda la configuración a un archivo de texto para que el usuario pudiera saber como se usa el sistema. De la misma forma, en este archivo puse instrucciones para el instalador y para diversas cosas como conectarse a la red o actualizar los repositorios.<br>
 </dd>
         
-        <dt>Mantenimiento - 25 hrs</dt><dd>El mantenimiento es la parte más importante de cualquier proyecto de sistemas, sobre todo en sistemas operativos, pues cualquier error puede volver al sistema completamente obsoleto o hasta peligroso para la seguridad del usuario. Por esto mismo he dedicado varias horas a el mantenimiento del sistema en aspectos como los siguientes<br>
-•  Infiernos de dependencias<br>
-•  Bugs en el bootloader<br>
-•  Mantenimiento de scripts<br>
-•  Testing<br>
-•  Publicaciones en sourceforge y github<br>
-•  Mantenimiento de la guía<br>
-
-        <h2><a href="https://github.com/ArizpeA1">Github</a></h2>
-        <dl style=font-size:large>
-        <dd>Durante el último año he estado trabajando en diferentes scripts que también he llegado a integrar en StitchesOS para que otros también puedan disfrutar de los beneficios que tener estas utilidades brindan.
-        </dd>
-        </dl>
-        <dl style=font-size:large>
-            <dt><a href="https://github.com/ArizpeA1/conf-ircd-hybrid">conf-ircd-hybrid - 9 hrs</a></dt><dd>Este es un proyecto que se destaca de los demás que se pueden encontrar en mi perfil de github por la finalidad que tiene, pues este a diferencia de los demás es un proyecto de educación en el que explico como poner un servidor de chat IRC, y así que las personas puedan crear sus propias comunidades y sitios regulados por ellos donde tengan total libertad de expresión.<br>
-La importancia de este proyecto recae en que en vez de que las personas tengan que investigar cómo se usan paquetes “pre-armados” que a la larga terminan siendo mas difíciles de mantener se puedan dar una idea de como hacer un servidor vanilla con ircd-hybrid a partir de las instrucciones proporcionadas y la configuración que se encuentra en el repositorio. Así este proyecto simplifica todo el proceso en instrucciones concisas y claras que permiten que el interesado pueda lograr su objetivo mientras aprende el funcionamiento del servidor IRC.<br>
-</dd>
-            <dt></dt><dd></dd>
-           
-            </dl>
-        <h2>Idiomas</a></h2>
-        <dl style=font-size:large>
-        <dt>Latín - 6 hrs</dt><dd>Desde un año antes de entrar al programa del diploma, yo aprendí Latín, pero a falta de práctica, lo único que puedo hacer es leerlo, y no puedo leer cosas muy complejas como serían libros de filosofía de la edad media. Pero para llegar a ese nivel, en el año de repente tomaba lecturas de varios minutos para refrescar el vocabulario y aprender de vez en cuando palabras nuevas. Para así cuando tenga más tiempo poder ampliar mucho mi conocimiento sin tener que volver a aprenderlo desde 0. </dd>
-        <dt>Sánscrito - 12 hrs</dt><dd><img class=resright src="/pix/FotoSanscrito.jpeg" alt="Luke" title="Cuaderno">En primer semestre de IB mi profesor de Inglés A me motivó a aprender un idioma, y al principio por chiste empezé a aprender a escribir en sánscrito, pero luego me di cuenta de que tan interesante era y me enfoqué en aprender el sistema de escritura devanagri para luego empezar con gramatica.<br> Este tema hizo un impacto tan fuerte en mi perpción del lenguaje y como se conforma, que llegué a hacer borradores de la monografía de la relación que se puede encontrar entre el sánscrito y otros lenguajes antiguos como el griego o el latín.<br></dd>
-        
-         <h2>Fotografías</a></h2>
-         <dt>Album de fotografías - 5 Hrs</dt><img class=resright src="/pix/amanecer.jpg" alt="Luke" title="Amanecer-1">
-         <dd>Inicialmente no tenía ni idea de que esta actividad pudiera contar como CAS, si no que lo hice durante casi los 2 años nada más por hobby. Y esto es tomar fotografías de amaneceres y atardeceres, como la escuela en donde estudio tiene una vista fenomenal. Cuando entré presencialmente empezé a tomar fotos a las 6:10 am que llegaba. Y esto se hizo costubmbre así como tomar fotografías los días que me quedaba hasta tarde en la escuela. Esto resultó en que mejoraran considerablemente mis habilidades para tomar fotos, y trabajar con todas las opciónes que tiene la camara así como que terminé teniendo un album de fotos de las cordilleras que rodean mi escuela, con fotos de los atardeceres y amaneceres en todas las epocas del año.</dd>
-        
-        <dt>Club de lectura - 8 meses de lecturas y varias horas de discusión al mes</dt><dd>El club de lectura fué una actividad que realizé junto con amigos con los que decidí hacer un calendario para leer ciertos libros cada mes para que juntos nos motivaramos a cumplir la meta propuesta, y cada mes nos juntamos a discutir y comentar los libros. Esta actividad me permitió crecer mi perspectiva y agudizar mis analisis literarios. Y a los otros participantes les permitió conocer obras clásicas y aprender tanto de ellos mismos al leer la obra y hacer interpretaciones como de los demás y así ser personas más completas. El calendario todo se enfocó en leer libros que fueran de nuestro interés, pero principalmente en terminar el libro de Daniel Deronda de George Eliot, el que dió inicio y final al club de lectura.<br>
-            El calendario se puede encontrar <a href="/docs/Timeline-books.pdf">Aquí</a</dd>
-        <dt></dt><dd></dd>
-        <dt></dt><dd></dd>
-        </dl>
-             
-</dd>
-        </dl>
-
 
         </main>
 
